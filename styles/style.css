@@ -1,1 +1,140 @@
 @charset "UTF-8";
+
+:root {
+  --cor-primaria: #5f2c82;
+  --cor-secundaria: #49a09d;
+
+  --cor-input: #95cfcd;
+  --cor-link: #2d6462;
+  --cor-link-hover: #6cd3cf;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--cor-primaria);
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  background-color: white;
+  width: 250px;
+  height: 526px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+}
+
+#imagem {
+  display: block;
+  background: var(--cor-primaria) url("../image/metal.jpg") no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  height: 200px;
+}
+
+#formulario {
+  display: block;
+  padding: 10px;
+}
+
+#formulario h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#formulario p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.campo {
+  background-color: var(--cor-primaria);
+  border: 2px solid var(--cor-primaria);
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+
+.campo span {
+  color: white;
+  font-size: 1.9em;
+  width: 40px;
+  padding: 5px;
+}
+
+input {
+  background-color: var(--cor-input);
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-10px);
+}
+
+input:focus-within {
+  background-color: white;
+  border: none;
+}
+
+button {
+  background-color: var(--cor-secundaria);
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  margin: 6px 0px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-link);
+}
+
+form a {
+  display: block;
+  text-align: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  color: var(--cor-link);
+  background-color: white;
+  border: 1px solid var(--cor-link);
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 5px 0px 0px 5px;
+}
+
+form a:hover {
+  background-color: var(--cor-link-hover);
+}
+
+a #mail {
+  font-size: 0.9em;
+}
