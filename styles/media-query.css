@@ -12,10 +12,6 @@ Grandes telas: acima de 1200px
 :root {
   --cor-primaria: #5f2c82;
   --cor-secundaria: #49a09d;
-
-  --cor-input: #95cfcd;
-  --cor-link: #2d6462;
-  --cor-link-hover: #6cd3cf;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
